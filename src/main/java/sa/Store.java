@@ -10,8 +10,9 @@ public class Store {
 	public float [] prices; //Prices of products
 	// (ex: [3.45, 0, 0, 1.19] = product 0 costs 3,45)
 	
-	public Store() {
-		
+	public Store(boolean[] products, float[] prices) {
+		this.products = products;
+		this.prices = prices;
 	}
 
 }
