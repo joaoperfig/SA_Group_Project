@@ -3,11 +3,11 @@ package sa;
 import java.util.ArrayList;
 
 public class StoresPhenotype extends Phenotype {
-	
+
 	private int size;
 	private ArrayList<Float> storePositions;
 	private StoreMap storemap;
-	
+
 	public StoresPhenotype() { //Construct Phenotype from random parameters (for initial population)
 		this.storemap = StoreMap.getInstance();
 		this.size = storemap.storesNumber * 2;
@@ -17,7 +17,7 @@ public class StoresPhenotype extends Phenotype {
 			storePositions.add((float) Math.random()*storemap.leny);
 		}
 	}
-	
+
 	public StoresPhenotype(Genotype genotype) { //Decode Genotype and construct Phenotype from it
 		RealVectorGenotype rg = (RealVectorGenotype)genotype;
 		this.storemap = StoreMap.getInstance();

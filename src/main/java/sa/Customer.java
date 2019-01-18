@@ -5,9 +5,13 @@ public class Customer {
 	public float posx; //X component of position
 	public float posy; //Y component of position
 	
-	public Customer(int posx, int posy) {
+	public boolean[] products;  //Products this costumer wants
+	// (ex: [true, false, false, true] = costumer wants products 0 and 3)
+	
+	public Customer(int posx, int posy, boolean[] products) {
 		this.posx = posx;
 		this.posy = posy;
+		this.products = products;
 	}
 
 	private float distanceTo(Store store) {
