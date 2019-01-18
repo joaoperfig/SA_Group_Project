@@ -13,7 +13,7 @@ public class Main {
 		Evolver ev = new Evolver();
 		Population initialp = new Population(populationSize);
 		for (int i =0; i<populationSize ;i++) {
-			initialp.addIndividual(new Individual(null)); //FIXME
+			initialp.addIndividual(new Individual(new StoresPhenotype()));
 		}
 		Population finalpop = ev.runCycles(epochs, initialp, mutator, cross, selector, matingPoolSize);
 	}
