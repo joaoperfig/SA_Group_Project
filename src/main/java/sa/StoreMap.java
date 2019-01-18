@@ -21,7 +21,7 @@ public class StoreMap {
 	
 	public static StoreMap getInstance() {
 		if (instance == null) {
-			instance = new StoreMap(40, 40, 40, 4, 4);
+			instance = new StoreMap(40, 40, 10, 4, 4);
 		}
 		return instance;
 	}
